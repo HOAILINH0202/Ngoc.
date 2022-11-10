@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.heart{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transform:rotate(45deg);
+    margin: auto;
+    box-shadow: 0px 0px 40px red;
+    animation: heart ease-in-out 0.4s infinite;
+}
+.heart::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transform:rotate(45deg);
+    left:0px;
+    top: -82.5px;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px red;
+}
+.heart::after{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transform:rotate(45deg);
+    z-index: 1;
+    margin-left: -85px;
+    box-shadow: 0px 0px 40px red;
+    border-radius: 50%;
+
+}
+
+@keyframes heart {
+    0% {
+      transform:scale(1)
+    }
+  
+    50% {
+        transform: scale(1.2)
+    }
+    100%{
+        transform:scale(1)
+    }
+  }
+
+.group{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    transform: rotate(45deg);
+    margin: auto;
+  }
+
+.hearts{
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+    margin: auto;
+    box-shadow: 0px 0px 40px violet;
+    position: absolute;
+    left: 300px;
+    z-index: 2;
+    top: 100px;
+    animation: fly 7s ease-in-out infinite;
+   
+}
+@keyframes fly  {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        top:-500px;
+        left: -300px;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top:-500px;
+        left: -300px;
+    }
+   
+}
+
+@keyframes fly2  {
+    0%{
+        opacity: 0;
+    
+    }
+    50%{
+        left: -500px;
+        top:-700px;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: -500px;
+        top:-700px;
+
+    }
+}
+
+@keyframes fly3  {
+    0%{
+        opacity: 0;
+    
+    }
+    50%{
+        left: -800px;
+        top:-700px;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: -800px;
+        top:-700px;
+
+    }
+}@keyframes fly4  {
+    0%{
+        opacity: 0;
+    
+    }
+    50%{
+        left: -500px;
+        top:-700px;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: -500px;
+        top:-700px;
+
+    }
+}
+@keyframes fly5  {
+    0%{
+        opacity: 0;
+    
+    }
+    50%{
+        left: -500px;
+        top:-700px;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: -500px;
+        top:-700px;
+
+    }
+}
+@keyframes fly6  {
+    0%{
+        opacity: 0;
+    
+    }
+    50%{
+        left: -500px;
+        top:-700px;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: -500px;
+        top:-700px;
+
+    }
+}
+  .hearts::before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+    transform:rotate(45deg);
+    left:0px;
+    top: -55px;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px violet
+}
+.hearts::after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+    transform:rotate(45deg);
+    z-index: 1;
+    margin-left: -85px;
+    box-shadow: 0px 0px 40px violet;
+    border-radius: 50%;
+    left:27.5px;
+    top: 0px;
+
+}
+
+.hearts2{
+    left: -300px;
+    animation: fly2 7s ease-in-out infinite 1s;
+    opacity: 0;
+
+
+}
+.hearts3{
+    left: 500px;
+    animation: fly3 7s ease-in-out infinite 2s;
+    opacity: 0;
+
+}
+.hearts4{
+    left: -100px;
+    animation: fly4 7s ease-in-out infinite 3s;
+    opacity: 0;
+
+}
+
+.hearts5{
+    left: -400px;
+    animation: fly5 7s ease-in-out infinite 4s;
+    opacity: 0;
+
+}
+.hearts6{
+    left: -300px;
+    animation: fly6 7s ease-in-out infinite 5s;
+    opacity: 0;
+
+}
+
+marquee{
+    position: absolute;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
